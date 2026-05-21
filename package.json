@@ -1,0 +1,24 @@
+{
+  "name": "polyglot-systems-engineer-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "infra:up": "docker compose -f infra/docker-compose.yml up -d",
+    "infra:down": "docker compose -f infra/docker-compose.yml down",
+    "infra:reset": "docker compose -f infra/docker-compose.yml down -v",
+    "infra:logs": "docker compose -f infra/docker-compose.yml logs -f",
+    "db:shell": "docker exec -it pattern-lab-postgres psql -U dev -d postgres"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.1.2",
+      "onFail": "download"
+    }
+  },
+  "type": "module"
+}

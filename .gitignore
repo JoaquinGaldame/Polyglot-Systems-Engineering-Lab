@@ -1,0 +1,34 @@
+# Env
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+dist/
+.pnpm-store/
+
+# .NET
+bin/
+obj/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Go
+*.exe
+*.test
+
+# Docker / local
+.docker/
+data/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
